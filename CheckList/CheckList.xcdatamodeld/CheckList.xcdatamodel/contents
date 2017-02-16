@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="DKList" representedClassName="DKList" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DKTask" inverseName="list" inverseEntity="DKTask" syncable="YES"/>
+    </entity>
+    <entity name="DKTask" representedClassName="DKTask" syncable="YES">
+        <attribute name="cheked" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DKList" inverseName="tasks" inverseEntity="DKList" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DKList" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="DKTask" positionX="-54" positionY="-9" width="128" height="120"/>
+    </elements>
+</model>

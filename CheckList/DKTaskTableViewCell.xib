@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DKTaskTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MD9-27-jms">
+                        <rect key="frame" x="268" y="0.0" width="44" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="6iP-IZ-TIU"/>
+                            <constraint firstAttribute="width" constant="44" id="j4r-cU-KAC"/>
+                        </constraints>
+                        <connections>
+                            <action selector="checkButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TwF-hx-mKy"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sE1-Lc-yJt">
+                        <rect key="frame" x="8" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="56P-gK-oX2"/>
+                            <constraint firstAttribute="height" constant="40" id="g7R-Sw-Q4x"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hR1-ie-KjQ">
+                        <rect key="frame" x="56" y="2" width="204" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="dgT-lY-qj5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sE1-Lc-yJt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3jn-Uc-TwX"/>
+                    <constraint firstItem="MD9-27-jms" firstAttribute="leading" secondItem="hR1-ie-KjQ" secondAttribute="trailing" constant="8" id="BZD-Vw-rAT"/>
+                    <constraint firstAttribute="bottom" secondItem="hR1-ie-KjQ" secondAttribute="bottom" constant="2" id="Dx6-ai-AdE"/>
+                    <constraint firstItem="sE1-Lc-yJt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="SEr-ie-CkL"/>
+                    <constraint firstItem="hR1-ie-KjQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="SaE-4V-dYd"/>
+                    <constraint firstItem="hR1-ie-KjQ" firstAttribute="leading" secondItem="sE1-Lc-yJt" secondAttribute="trailing" constant="8" id="W16-sn-y84"/>
+                    <constraint firstItem="MD9-27-jms" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dx7-dO-bjq"/>
+                    <constraint firstAttribute="trailing" secondItem="MD9-27-jms" secondAttribute="trailing" constant="8" id="vYb-4x-BHa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="taskCheckButton" destination="MD9-27-jms" id="Yf4-sQ-RZ9"/>
+                <outlet property="taskImageView" destination="sE1-Lc-yJt" id="DkR-4K-T4L"/>
+                <outlet property="taskTitleLabel" destination="hR1-ie-KjQ" id="t0i-No-8AX"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

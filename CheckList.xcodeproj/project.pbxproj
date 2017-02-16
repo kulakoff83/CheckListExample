@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DAD5A021E54B5EA00DE526F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD5A011E54B5EA00DE526F /* main.m */; };
+		5DAD5A051E54B5EA00DE526F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD5A041E54B5EA00DE526F /* AppDelegate.m */; };
+		5DAD5A0B1E54B5EA00DE526F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD5A091E54B5EA00DE526F /* Main.storyboard */; };
+		5DAD5A0D1E54B5EA00DE526F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD5A0C1E54B5EA00DE526F /* Assets.xcassets */; };
+		5DAD5A101E54B5EA00DE526F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD5A0E1E54B5EA00DE526F /* LaunchScreen.storyboard */; };
+		5DAD5A451E54BCFE00DE526F /* DKCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD5A441E54BCFE00DE526F /* DKCoreDataStack.m */; };
+		5DAD5A4B1E54BEA100DE526F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD5A471E54BEA100DE526F /* Bolts.framework */; };
+		5DAD5A4C1E54BEA100DE526F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD5A481E54BEA100DE526F /* FBSDKCoreKit.framework */; };
+		5DAD5A4D1E54BEA100DE526F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD5A491E54BEA100DE526F /* FBSDKLoginKit.framework */; };
+		5DAD5A4E1E54BEA100DE526F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD5A4A1E54BEA100DE526F /* FBSDKShareKit.framework */; };
+		5DAD5A511E54C00500DE526F /* DKFBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD5A501E54C00500DE526F /* DKFBLoginViewController.m */; };
+		5DAD5A581E54E02400DE526F /* DKTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD5A571E54E02400DE526F /* DKTasksViewController.m */; };
+		5DAD5A5B1E54E05200DE526F /* DKListsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD5A5A1E54E05200DE526F /* DKListsViewController.m */; };
+		5DAD5A891E54F67A00DE526F /* DKListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD5A871E54F67A00DE526F /* DKListTableViewCell.m */; };
+		5DAD5A8A1E54F67A00DE526F /* DKListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD5A881E54F67A00DE526F /* DKListTableViewCell.xib */; };
+		5DF600031E552882001A18C7 /* DKTaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF600011E552882001A18C7 /* DKTaskTableViewCell.m */; };
+		5DF600041E552882001A18C7 /* DKTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF600021E552882001A18C7 /* DKTaskTableViewCell.xib */; };
+		5DF600081E55E765001A18C7 /* DKTaskDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF600061E55E765001A18C7 /* DKTaskDetailsViewController.m */; };
+		5DF600091E55E765001A18C7 /* DKTaskDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DF600071E55E765001A18C7 /* DKTaskDetailsViewController.xib */; };
+		5DF6000C1E561887001A18C7 /* DKGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6000B1E561887001A18C7 /* DKGalleryViewController.m */; };
+		5DF6FFFB1E551946001A18C7 /* DKTask+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6FFF41E551946001A18C7 /* DKTask+CoreDataClass.m */; };
+		5DF6FFFC1E551946001A18C7 /* DKTask+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6FFF61E551946001A18C7 /* DKTask+CoreDataProperties.m */; };
+		5DF6FFFD1E551946001A18C7 /* DKList+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6FFF81E551946001A18C7 /* DKList+CoreDataClass.m */; };
+		5DF6FFFE1E551946001A18C7 /* DKList+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF6FFFA1E551946001A18C7 /* DKList+CoreDataProperties.m */; };
+		5DF7E6181E550B9B00C4E323 /* CheckList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7E6161E550B9B00C4E323 /* CheckList.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DAD59FD1E54B5EA00DE526F /* CheckList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DAD5A011E54B5EA00DE526F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DAD5A031E54B5EA00DE526F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5DAD5A041E54B5EA00DE526F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5DAD5A0A1E54B5EA00DE526F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DAD5A0C1E54B5EA00DE526F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DAD5A0F1E54B5EA00DE526F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DAD5A111E54B5EA00DE526F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DAD5A431E54BCFE00DE526F /* DKCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKCoreDataStack.h; sourceTree = "<group>"; };
+		5DAD5A441E54BCFE00DE526F /* DKCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKCoreDataStack.m; sourceTree = "<group>"; };
+		5DAD5A471E54BEA100DE526F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		5DAD5A481E54BEA100DE526F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		5DAD5A491E54BEA100DE526F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		5DAD5A4A1E54BEA100DE526F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		5DAD5A4F1E54C00500DE526F /* DKFBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKFBLoginViewController.h; sourceTree = "<group>"; };
+		5DAD5A501E54C00500DE526F /* DKFBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKFBLoginViewController.m; sourceTree = "<group>"; };
+		5DAD5A521E54C43700DE526F /* CheckList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckList.entitlements; sourceTree = "<group>"; };
+		5DAD5A561E54E02400DE526F /* DKTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTasksViewController.h; sourceTree = "<group>"; };
+		5DAD5A571E54E02400DE526F /* DKTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTasksViewController.m; sourceTree = "<group>"; };
+		5DAD5A591E54E05200DE526F /* DKListsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKListsViewController.h; sourceTree = "<group>"; };
+		5DAD5A5A1E54E05200DE526F /* DKListsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKListsViewController.m; sourceTree = "<group>"; };
+		5DAD5A861E54F67A00DE526F /* DKListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKListTableViewCell.h; sourceTree = "<group>"; };
+		5DAD5A871E54F67A00DE526F /* DKListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKListTableViewCell.m; sourceTree = "<group>"; };
+		5DAD5A881E54F67A00DE526F /* DKListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DKListTableViewCell.xib; sourceTree = "<group>"; };
+		5DF600001E552882001A18C7 /* DKTaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTaskTableViewCell.h; sourceTree = "<group>"; };
+		5DF600011E552882001A18C7 /* DKTaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTaskTableViewCell.m; sourceTree = "<group>"; };
+		5DF600021E552882001A18C7 /* DKTaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DKTaskTableViewCell.xib; sourceTree = "<group>"; };
+		5DF600051E55E765001A18C7 /* DKTaskDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTaskDetailsViewController.h; sourceTree = "<group>"; };
+		5DF600061E55E765001A18C7 /* DKTaskDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTaskDetailsViewController.m; sourceTree = "<group>"; };
+		5DF600071E55E765001A18C7 /* DKTaskDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DKTaskDetailsViewController.xib; sourceTree = "<group>"; };
+		5DF6000A1E561887001A18C7 /* DKGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKGalleryViewController.h; sourceTree = "<group>"; };
+		5DF6000B1E561887001A18C7 /* DKGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKGalleryViewController.m; sourceTree = "<group>"; };
+		5DF6FFF31E551946001A18C7 /* DKTask+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DKTask+CoreDataClass.h"; sourceTree = "<group>"; };
+		5DF6FFF41E551946001A18C7 /* DKTask+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DKTask+CoreDataClass.m"; sourceTree = "<group>"; };
+		5DF6FFF51E551946001A18C7 /* DKTask+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DKTask+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5DF6FFF61E551946001A18C7 /* DKTask+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DKTask+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5DF6FFF71E551946001A18C7 /* DKList+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DKList+CoreDataClass.h"; sourceTree = "<group>"; };
+		5DF6FFF81E551946001A18C7 /* DKList+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DKList+CoreDataClass.m"; sourceTree = "<group>"; };
+		5DF6FFF91E551946001A18C7 /* DKList+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DKList+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5DF6FFFA1E551946001A18C7 /* DKList+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DKList+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5DF7E6171E550B9B00C4E323 /* CheckList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheckList.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DAD59FA1E54B5EA00DE526F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAD5A4E1E54BEA100DE526F /* FBSDKShareKit.framework in Frameworks */,
+				5DAD5A4B1E54BEA100DE526F /* Bolts.framework in Frameworks */,
+				5DAD5A4C1E54BEA100DE526F /* FBSDKCoreKit.framework in Frameworks */,
+				5DAD5A4D1E54BEA100DE526F /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DAD59F41E54B5EA00DE526F = {
+			isa = PBXGroup;
+			children = (
+				5DAD59FF1E54B5EA00DE526F /* CheckList */,
+				5DAD59FE1E54B5EA00DE526F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DAD59FE1E54B5EA00DE526F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD59FD1E54B5EA00DE526F /* CheckList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DAD59FF1E54B5EA00DE526F /* CheckList */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD5A521E54C43700DE526F /* CheckList.entitlements */,
+				5DAD5A031E54B5EA00DE526F /* AppDelegate.h */,
+				5DAD5A041E54B5EA00DE526F /* AppDelegate.m */,
+				5DAD5A431E54BCFE00DE526F /* DKCoreDataStack.h */,
+				5DAD5A441E54BCFE00DE526F /* DKCoreDataStack.m */,
+				5DAD5A191E54B70900DE526F /* Model */,
+				5DAD5A1A1E54B71500DE526F /* View */,
+				5DAD5A171E54B6F400DE526F /* Controllers */,
+				5DAD5A091E54B5EA00DE526F /* Main.storyboard */,
+				5DAD5A0C1E54B5EA00DE526F /* Assets.xcassets */,
+				5DAD5A0E1E54B5EA00DE526F /* LaunchScreen.storyboard */,
+				5DAD5A111E54B5EA00DE526F /* Info.plist */,
+				5DAD5A461E54BE4F00DE526F /* Frameworks */,
+				5DAD5A001E54B5EA00DE526F /* Supporting Files */,
+			);
+			path = CheckList;
+			sourceTree = "<group>";
+		};
+		5DAD5A001E54B5EA00DE526F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD5A011E54B5EA00DE526F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DAD5A171E54B6F400DE526F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD5A4F1E54C00500DE526F /* DKFBLoginViewController.h */,
+				5DAD5A501E54C00500DE526F /* DKFBLoginViewController.m */,
+				5DAD5A591E54E05200DE526F /* DKListsViewController.h */,
+				5DAD5A5A1E54E05200DE526F /* DKListsViewController.m */,
+				5DAD5A561E54E02400DE526F /* DKTasksViewController.h */,
+				5DAD5A571E54E02400DE526F /* DKTasksViewController.m */,
+				5DF6000A1E561887001A18C7 /* DKGalleryViewController.h */,
+				5DF6000B1E561887001A18C7 /* DKGalleryViewController.m */,
+				5DF600051E55E765001A18C7 /* DKTaskDetailsViewController.h */,
+				5DF600061E55E765001A18C7 /* DKTaskDetailsViewController.m */,
+				5DF600071E55E765001A18C7 /* DKTaskDetailsViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5DAD5A191E54B70900DE526F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5DF6FFF31E551946001A18C7 /* DKTask+CoreDataClass.h */,
+				5DF6FFF41E551946001A18C7 /* DKTask+CoreDataClass.m */,
+				5DF6FFF51E551946001A18C7 /* DKTask+CoreDataProperties.h */,
+				5DF6FFF61E551946001A18C7 /* DKTask+CoreDataProperties.m */,
+				5DF6FFF71E551946001A18C7 /* DKList+CoreDataClass.h */,
+				5DF6FFF81E551946001A18C7 /* DKList+CoreDataClass.m */,
+				5DF6FFF91E551946001A18C7 /* DKList+CoreDataProperties.h */,
+				5DF6FFFA1E551946001A18C7 /* DKList+CoreDataProperties.m */,
+				5DF7E6161E550B9B00C4E323 /* CheckList.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5DAD5A1A1E54B71500DE526F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DF6FFFF1E552858001A18C7 /* DKTaskTableViewCell */,
+				5DAD5A851E54F64000DE526F /* DKListTableViewCell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5DAD5A461E54BE4F00DE526F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD5A471E54BEA100DE526F /* Bolts.framework */,
+				5DAD5A481E54BEA100DE526F /* FBSDKCoreKit.framework */,
+				5DAD5A491E54BEA100DE526F /* FBSDKLoginKit.framework */,
+				5DAD5A4A1E54BEA100DE526F /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DAD5A851E54F64000DE526F /* DKListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD5A861E54F67A00DE526F /* DKListTableViewCell.h */,
+				5DAD5A871E54F67A00DE526F /* DKListTableViewCell.m */,
+				5DAD5A881E54F67A00DE526F /* DKListTableViewCell.xib */,
+			);
+			name = DKListTableViewCell;
+			sourceTree = "<group>";
+		};
+		5DF6FFFF1E552858001A18C7 /* DKTaskTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5DF600001E552882001A18C7 /* DKTaskTableViewCell.h */,
+				5DF600011E552882001A18C7 /* DKTaskTableViewCell.m */,
+				5DF600021E552882001A18C7 /* DKTaskTableViewCell.xib */,
+			);
+			name = DKTaskTableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DAD59FC1E54B5EA00DE526F /* CheckList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DAD5A141E54B5EA00DE526F /* Build configuration list for PBXNativeTarget "CheckList" */;
+			buildPhases = (
+				5DAD59F91E54B5EA00DE526F /* Sources */,
+				5DAD59FA1E54B5EA00DE526F /* Frameworks */,
+				5DAD59FB1E54B5EA00DE526F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheckList;
+			productName = CheckList;
+			productReference = 5DAD59FD1E54B5EA00DE526F /* CheckList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DAD59F51E54B5EA00DE526F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = kulakoff;
+				TargetAttributes = {
+					5DAD59FC1E54B5EA00DE526F = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5DAD59F81E54B5EA00DE526F /* Build configuration list for PBXProject "CheckList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DAD59F41E54B5EA00DE526F;
+			productRefGroup = 5DAD59FE1E54B5EA00DE526F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DAD59FC1E54B5EA00DE526F /* CheckList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DAD59FB1E54B5EA00DE526F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF600041E552882001A18C7 /* DKTaskTableViewCell.xib in Resources */,
+				5DAD5A101E54B5EA00DE526F /* LaunchScreen.storyboard in Resources */,
+				5DAD5A0D1E54B5EA00DE526F /* Assets.xcassets in Resources */,
+				5DAD5A8A1E54F67A00DE526F /* DKListTableViewCell.xib in Resources */,
+				5DAD5A0B1E54B5EA00DE526F /* Main.storyboard in Resources */,
+				5DF600091E55E765001A18C7 /* DKTaskDetailsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DAD59F91E54B5EA00DE526F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF600081E55E765001A18C7 /* DKTaskDetailsViewController.m in Sources */,
+				5DF6000C1E561887001A18C7 /* DKGalleryViewController.m in Sources */,
+				5DF7E6181E550B9B00C4E323 /* CheckList.xcdatamodeld in Sources */,
+				5DAD5A581E54E02400DE526F /* DKTasksViewController.m in Sources */,
+				5DAD5A891E54F67A00DE526F /* DKListTableViewCell.m in Sources */,
+				5DAD5A511E54C00500DE526F /* DKFBLoginViewController.m in Sources */,
+				5DF600031E552882001A18C7 /* DKTaskTableViewCell.m in Sources */,
+				5DAD5A451E54BCFE00DE526F /* DKCoreDataStack.m in Sources */,
+				5DAD5A5B1E54E05200DE526F /* DKListsViewController.m in Sources */,
+				5DF6FFFC1E551946001A18C7 /* DKTask+CoreDataProperties.m in Sources */,
+				5DF6FFFE1E551946001A18C7 /* DKList+CoreDataProperties.m in Sources */,
+				5DF6FFFD1E551946001A18C7 /* DKList+CoreDataClass.m in Sources */,
+				5DAD5A051E54B5EA00DE526F /* AppDelegate.m in Sources */,
+				5DAD5A021E54B5EA00DE526F /* main.m in Sources */,
+				5DF6FFFB1E551946001A18C7 /* DKTask+CoreDataClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DAD5A091E54B5EA00DE526F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DAD5A0A1E54B5EA00DE526F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DAD5A0E1E54B5EA00DE526F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DAD5A0F1E54B5EA00DE526F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DAD5A121E54B5EA00DE526F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5DAD5A131E54B5EA00DE526F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DAD5A151E54B5EA00DE526F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CheckList/CheckList.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CheckList",
+				);
+				INFOPLIST_FILE = CheckList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kulakoff.CheckList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5DAD5A161E54B5EA00DE526F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CheckList/CheckList.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CheckList",
+				);
+				INFOPLIST_FILE = CheckList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kulakoff.CheckList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DAD59F81E54B5EA00DE526F /* Build configuration list for PBXProject "CheckList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAD5A121E54B5EA00DE526F /* Debug */,
+				5DAD5A131E54B5EA00DE526F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DAD5A141E54B5EA00DE526F /* Build configuration list for PBXNativeTarget "CheckList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAD5A151E54B5EA00DE526F /* Debug */,
+				5DAD5A161E54B5EA00DE526F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5DF7E6161E550B9B00C4E323 /* CheckList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5DF7E6171E550B9B00C4E323 /* CheckList.xcdatamodel */,
+			);
+			currentVersion = 5DF7E6171E550B9B00C4E323 /* CheckList.xcdatamodel */;
+			path = CheckList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5DAD59F51E54B5EA00DE526F /* Project object */;
+}

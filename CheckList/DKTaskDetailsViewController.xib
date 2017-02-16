@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DKTaskDetailsViewController">
+            <connections>
+                <outlet property="taskImageView" destination="3Uo-9J-gdu" id="Myz-QG-6Xx"/>
+                <outlet property="taskTitleTextField" destination="751-Og-8to" id="6Yz-MY-vcT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="TaskDetailsVC" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="751-Og-8to">
+                    <rect key="frame" x="16" y="318" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image" translatesAutoresizingMaskIntoConstraints="NO" id="3Uo-9J-gdu">
+                    <rect key="frame" x="87" y="74" width="200" height="200"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="lFt-2Y-v3Q"/>
+                        <constraint firstAttribute="height" constant="200" id="xBT-V7-SZ8"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="n16-Mc-f8z" appends="YES" id="4S8-Qz-423"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="751-Og-8to" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="MHL-xw-cbe"/>
+                <constraint firstAttribute="trailing" secondItem="751-Og-8to" secondAttribute="trailing" constant="16" id="Pnv-Wz-I9C"/>
+                <constraint firstItem="751-Og-8to" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ROK-Qr-HPF"/>
+                <constraint firstItem="3Uo-9J-gdu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="Rgy-0a-MZa"/>
+                <constraint firstItem="3Uo-9J-gdu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fad-ep-RAx"/>
+                <constraint firstItem="751-Og-8to" firstAttribute="centerX" secondItem="3Uo-9J-gdu" secondAttribute="centerX" id="lGv-x2-R3d"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+        <tapGestureRecognizer id="n16-Mc-f8z">
+            <connections>
+                <action selector="taskImageViewTapped:" destination="-1" id="dGZ-3Q-qm0"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="no_image" width="256" height="256"/>
+    </resources>
+</document>
