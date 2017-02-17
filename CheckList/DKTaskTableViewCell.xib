@@ -28,7 +28,7 @@
                             <action selector="checkButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TwF-hx-mKy"/>
                         </connections>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sE1-Lc-yJt">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sE1-Lc-yJt">
                         <rect key="frame" x="8" y="2" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="56P-gK-oX2"/>
